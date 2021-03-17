@@ -8,7 +8,7 @@ I downloaded the data from the Institute of Computer Vision and Graphics website
 
 ### Understanding the Dataset:
 The dataset has all the original images in a folder called "original_images" and their corresponding images with masks in "label_images_semantic" folder. Both of these folders can be found in "proj/dataset/semantic_drone_dataset/" folder in this github repository. Here are examples of an original image and it's corresponding image with masj: <br />
-![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/original_image.png) ![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/image_with_mask.png)
+![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/original_image.png) ![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/image_with_mask.png) <br />
 Each image is of size (4000, 6000, 3) and each mask is of size (4000, 6000). There are a total of 400 images in the dataset. I have used a 0.7-0.15-0.15 splitof the dataset to give 280 images in training dataset, 60 images in validation dataset, and 60 images in the testing dataset respectively.
   
 ### Data transformation:
