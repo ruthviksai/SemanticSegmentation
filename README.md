@@ -13,3 +13,10 @@ Each image is of size (4000, 6000, 3) and each mask is of size (4000, 6000). The
   
 ### Data transformation:
 I have normalized the images using the standard means and standard deviations used in pytorch mean = [0.485, 0.456, 0.406], standard deviation = [0.229, 0.224, 0.225]. I have also used Albumentations python library to transform the training and validation data. Albumentations is a Python library for image augmentation. It is used to increase the quality of the trained models.
+
+## Model:
+I have used the U-Net model with ResNet50 encoder pretrained on the ImageNet dataset from the "segmentation-models-pytorch" python library. You can import the model and change the head using the following command:
+```python
+model = smp.Unet('resnet50', encoder_weights='imagenet', classes=23, activation=None, encoder_depth=5, decoder_channels=[256, 128, 64, 32, 16])
+```
+I have trained the model for 15 epochs and at each epoch calculated the average pixel accuracy and average IOU scores on both training and validation datasets along with losses. The plots corresponding to the 3 are given below: <br />
