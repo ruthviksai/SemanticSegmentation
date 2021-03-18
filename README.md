@@ -3,7 +3,7 @@
 The importance of Semantic Segmentation is growing everyday along with it's applications. Many trending AI solutions like Autonomous cars should be able to do Semantic Segmentation in order to be successful. The main goal of the project is to predict what class each pixel in images belong to? I got the Aerial Semantic Segmentation Drone dataset from http://dronedataset.icg.tugraz.at and performed Semantic Segmentation on it using the U-Net model with ResNet50 encoder.
 
 ## Related Work:
-I have been trying to do a Semantic Segmentation project for a while now and this final project has given me the right opportunity to do so. Before this class, I have read many articles on Semantic Segmentation. I have also learnt about U-Net with ResNet encoders from those articles which I have sued in this project. I have also looked at sample projects. Here are a few of those articles and projects: <br />
+I have been trying to do a Semantic Segmentation project for a while now and this final project has given me the right opportunity to do so. Before this class, I have read many articles on Semantic Segmentation. I have also learnt about U-Net with ResNet encoders from those articles which I have used in this project. I have also looked at sample projects. Here are a few of those articles and projects: <br />
 https://www.jeremyjordan.me/semantic-segmentation/ <br />
 https://towardsdatascience.com/semantic-segmentation-with-deep-learning-a-guide-and-code-e52fc8958823 <br />
 https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c <br />
