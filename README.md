@@ -39,3 +39,6 @@ Looking at the IOU and Pixel Accuracy scores, the model does not seem to be perf
 ![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/test_images2.png)
 
 From the above images, we can see that the model has done a decent job on predicting the masks. The model can certainly be improved by training it for more epochs. Currently I am only training it for 15 epochs. Another way to improve the model is to try a different encoder than ResNet50.
+
+## Code/Video
+The code is present in the file "SemanticSegmentation.ipynb". The video recording of the presentation of project is present in the file "zoom_0.mp4".
