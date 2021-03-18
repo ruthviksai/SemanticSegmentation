@@ -20,3 +20,4 @@ I have used the U-Net model with ResNet50 encoder pretrained on the ImageNet dat
 model = smp.Unet('resnet50', encoder_weights='imagenet', classes=23, activation=None, encoder_depth=5, decoder_channels=[256, 128, 64, 32, 16])
 ```
 I have trained the model for 15 epochs and at each epoch calculated the average pixel accuracy and average IOU scores on both training and validation datasets along with losses. The plots corresponding to the 3 are given below: <br />
+![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/training_plots.png) | ![alt text]
