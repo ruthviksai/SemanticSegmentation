@@ -22,6 +22,8 @@ model = smp.Unet('resnet50', encoder_weights='imagenet', classes=23, activation=
 I have trained the model for 15 epochs and at each epoch calculated the average pixel accuracy and average IOU scores on both training and validation datasets along with losses. The plots corresponding to the 3 are given below: <br />
 ![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/training_plots.png)
 
+We can see that the training and validation losses have decreased with each epoch. Also the IOU and Accuracy Scores have increases with each epoch. This shows that the training has been done properly.
+
 ## Evaluation/Results:
 ### Evaluation/Results
 After training the model, I have evaluated the model on the test dataset by running it on test images and predicting masks for the images. And comparing those predicted masks to the actual masks for the testing images, I have calculated the IOU Score and Pizel accuracy. Here are the IOU Scores for all the 60 testing images: <br />
@@ -35,4 +37,5 @@ The average Pixel Accuracy Score is 0.19052553530092592.
 Looking at the IOU and Pixel Accuracy scores, the model does not seem to be performing very well but looking at the precicted masks we can say that the model in fact has performed pretty well:
 ![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/test_images1.png)
 ![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/test_images2.png)
-![alt text](https://github.com/ruthviksai/SemanticSegmentation/blob/main/test_images3.png)
+
+From the above images, we can see that the model has done a decent job on predicting the masks. The model can certainly be improved by training it for more epochs. Currently I am only training it for 15 epochs. Another way to improve the model is to try a different encoder than ResNet50.
